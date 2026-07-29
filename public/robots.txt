@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /n/
+Disallow: /manage/
+Disallow: /api/
+
+Sitemap: https://kairan-to.yhay81.com/sitemap.xml

@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kairan-to",
+  "main": "src/worker.tsx",
+  "compatibility_date": "2026-07-27",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "kairan-to.yhay81.com",
+      "custom_domain": true,
+    },
+  ],
+  "triggers": {
+    "crons": ["43 18 * * *"],
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kairan-to",
+      "database_id": "b71a6751-30e3-42be-b307-e2d48959ceaa",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+  },
+}
